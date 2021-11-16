@@ -1,8 +1,8 @@
 
 <template lang="pug">
 //- div(style="height: 200vh;")
-img(v-lazy="'/fsaf.png'")
-ratio(style="background-color: red")(ratio=2,v-draggable)
+div(v-draggable.parent,v-access,v-show="") 家里的数据分类
+ratio(style="background-color: red")(ratio=2)
 	div.a.b.c(v-lines="lines")(v-visible) 很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊很多文字啊
 div(style="height: 200vh;")
 //- img(v-img="logo512" @click="test")
@@ -27,8 +27,8 @@ export default {
 			lines: 1
 		}
 	},
-	methods:{
-		test(){
+	methods: {
+		test() {
 			console.log(123);
 
 		}
