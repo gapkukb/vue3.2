@@ -1,0 +1,17 @@
+# Editor configuration, see http://editorconfig.org
+
+# 表示是最顶层的 EditorConfig 配置文件
+root = true
+
+[*] # 表示所有文件适用，其中四个配置会被prittier引用（如果prittier中未指定的话）
+charset = utf-8 # 设置文件字符集为 utf-8
+indent_style = tab # 缩进风格（tab | space） -> prittier.useTabs
+indent_size = 4 # 缩进大小   -> prittier.tabWidth
+end_of_line = lf # 控制换行类型(lf | cr | crlf)   -> prittier.endOfLine
+trim_trailing_whitespace = true # 去除行首的任意空白字符
+insert_final_newline = true # 文档是否需要以换行结尾
+max_line_length = 140 #一行最多容纳多少个字符 off = 关闭 -> prittier.printWidth
+
+[*.md] # 表示仅 md 文件适用以下规则
+max_line_length = off
+trim_trailing_whitespace = false

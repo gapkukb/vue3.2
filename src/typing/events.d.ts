@@ -1,0 +1,3 @@
+interface GlobalEventHandlersEventMap {
+	breakpoint: UIEvent;
+}
